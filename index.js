@@ -1,9 +1,31 @@
 function isPalindrome(word) {
   // Write your algorithm here
+   
+  for (i of word){
+    if (word[i] !== word[word.length-i]) {
+      console.log(false)
+      return false
+    } else {
+      console.log(true)
+      return true
+    }
+  }
+
 }
 
 /* 
   Add your pseudocode here
+  if string === palindrome
+    return true
+  else 
+    return false
+
+  itereate over the string, let n equal the length of the string. for each letter, i, i should equal n-i  
+
+  racecar
+  n=7
+  when i = 1, 1 = 7, 2 = 6, 3 = 5, 4 = 4
+
 */
 
 /*
